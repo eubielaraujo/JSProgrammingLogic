@@ -1,11 +1,16 @@
+// Classificador de Nível do Herói
+
+// Declaração das variáveis
 let NomeDoHeroi = "Ezio Auditore"
 let XPHeroi = 8356
 let Nivel
 
+// Função para classificar o herói
 function classificarHeroi(Nivel) {
     return console.log(`O Herói de nome ${NomeDoHeroi} está no nível de ${Nivel}`)
 }
 
+// Estrutura condicional para determinar a classificação do herói
 switch (true) {
     case XPHeroi < 1000:
         classificarHeroi("Ferro");

@@ -1,3 +1,4 @@
+// Fatura de Compras em JSON
 let invoice = {
     name: "Gabriel",
     age: 21,
@@ -9,6 +10,7 @@ let invoice = {
     }
 }
 
+// Função para gerar a fatura
 function generateInvoice(invoice) {
     console.log('The buyer details are:');
     console.log(`Name: ${invoice.name}`);
@@ -16,8 +18,9 @@ function generateInvoice(invoice) {
     console.log(`Products:`);
     for (let index in invoice.products) {
         let [productName, productPrice] = invoice.products[index];
-        console.log(`- ${productName}: $${productPrice}`);
+        console.log(`- ${productName}: R$ ${productPrice}`);
     }
 }
 
-generateInvoice(invoice)
+// Chamada da função para gerar a fatura
+generateInvoice(invoice)  
